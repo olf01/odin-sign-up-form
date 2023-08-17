@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign up</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Experience it for yourself!</h1>
+        <h2>What is 'it'? Fill out the form and you'll know soon enough. (This is not a real online service).</h2>
+        <div>
+            <form id="sign-up">
+                <label for="first-name">First name<span title="required">*</span>
+                    <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                </label>
+                <label for="last-name">Last name<span title="required">*</span>
+                    <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                </label>
+                <label for="email">Email<span title="required">*</span><span id="email-message" class="message"></span>
+                    <input type="email" id="email" name="email" placeholder="john.doe@email.com" required>
+                </label>
+                <label for="phone-number">Phone number<span title="required">*</span><span id="phone-number-message" class="message"></span>
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]+" placeholder="123456789" required>
+                </label>
+                <label for="password">Password<span title="required">*</span>
+                    <input type="password" id="password" name="password" pattern=".+" placeholder="••••••••••" required>
+                </label>
+                <label for="confirm-password">Confirm password<span title="required">*</span><span id="confirm-password-message" class="message"></span>
+                    <input type="password" id="confirm-password" pattern=".+" placeholder="••••••••••" required>
+                </label>
+                <label for="satisfaction">How satisfied are you with this form?
+                    <select id="satisfaction" name="satisfaction">
+                        <option></option>
+                        <option value="0">You have made an enemy for life</option>
+                        <option value="1">Meh</option>
+                        <option value="2">It's over already?!</option>
+                    </select>
+                </label>
+            </form>
+        </div>
+        <button type="submit" id="submit" form="sign-up">Create account</button>
+        <p>Photo by <a href="https://unsplash.com/@bendavisual">Benjamin Davies</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </body>
+    <script src="javascript.js"></script>
+</html>
